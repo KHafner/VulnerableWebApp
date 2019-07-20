@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+<style>
+HTML{background-color:lightcoral; font-family:Arial; color:#006600; font-size:18px}
+h1{font-style:bold; text-align: center}
+</style>
+<head>
+<title>Apples</title>
+<h1>Apples</h1>
+</head>
+
+<body>
+<div style="padding:10px"/>
+
+<p>Enter a name of an apple variety to see if it is in the database:</p>
+<form action="query.php" method="post">
+Apple Variety:
+<input type="text" name="name"> <br>
+<input type="submit" value="Search">
+</form>
+
+<br>
+
+<p>Upload an image of an apple to add to the database:</p>
+<form action="upload.php" method="post">
+Enter an image to upload: <br>
+<input type="file" name="fileupload"> <br>
+Enter the name of the variety: <br>
+<input type="text" name="applename">
+<input type="submit" value="upload" name="submit">
+</form>
+
+</body>
+</html>
